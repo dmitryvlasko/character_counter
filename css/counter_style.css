@@ -1,0 +1,382 @@
+ @import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border-radius: 0.3em;
+}
+body {
+    background-color: #f7f7f7;
+    color: #333;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 10px;
+    border-bottom-style: solid;
+    border-bottom-width: 0.3px;
+    border-bottom-color: rgb(177, 177, 177);
+    border-radius: 0em;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    cursor: pointer;
+    user-select: none
+}
+
+label {
+    cursor: pointer;
+}
+
+.select-lang {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 50px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+nav ul {
+    position: absolute;
+    width: 180px;
+    height:180px;
+    margin-top: 260px;
+    background-color: #fff;
+    color:#333;
+    overflow: auto;
+    display: none;
+}
+
+ul li {
+    display: block;
+    width: 100%;
+    color:#333;
+}
+
+ul li a {
+    color:#333;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+#select-lang-btn {
+    display: none;
+    color:#333;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.active {
+    display: initial;
+}
+
+.select-lang:hover {
+    background-color: #c0c0c0;
+}
+
+li:hover {
+    background-color: #c0c0c0;
+}
+
+
+
+header h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    cursor: pointer;
+}
+
+.navbar-right:hover {
+    background-color: #c0c0c0;
+}
+
+.theme-button {
+    width: 60px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.page_theme {
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.results {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.characters {
+    width: 220px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    background-color: rgb(189, 233, 189);
+}
+
+.characters-title {
+    display: flex;
+    justify-content: center;
+}
+
+.characters-count {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.without-spaces {
+    width: 220px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:rgba(238, 243, 167, 0.801);
+}
+
+.without-spaces-title {
+    display: flex;
+    justify-content: center;
+}
+
+.without-spaces-count {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.words {
+    width: 220px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(165, 196, 223);
+}
+
+.words-title {
+    display: flex;
+    justify-content: center;
+}
+
+.words-count {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.sentences {
+    width: 220px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(248, 205, 239);
+}
+
+.sentences-title {
+    display: flex;
+    justify-content: center;
+}
+
+.sentences-count {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.paragraphs {
+    width: 220px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(227, 218, 235);
+}
+
+.paragraphs-title {
+    display: flex;
+    justify-content: center;
+}
+
+.paragraphs-count {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.textarea {
+    display: flex;
+    justify-content: center;
+}
+
+textarea {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 1100px;
+    height: 250px;
+    font-size: 18px;
+    padding: 12px;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+}
+
+article {
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 70px;
+}
+
+article p {
+    margin: 30px 0px;
+}
+
+html.dark body {
+    color: #fff;
+    background-color: #333;
+}
+
+html.light body {
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+html.light nav ul {
+    background-color: #fff;
+    color:#333;
+}
+
+html.dark nav ul {
+    background-color: #474747;
+    color:#fff;
+}
+
+html.light ul li a {
+    color:#333;
+}
+
+html.dark ul li a {
+    color:#fff;
+}
+
+html.light .select-lang:hover {
+    background-color: #c0c0c0;
+}
+
+html.dark .select-lang:hover {
+    background-color: #646464;
+}
+
+html.light li:hover {
+    background-color: #c0c0c0;
+}
+
+html.dark li:hover {
+    background-color: #646464;
+}
+
+html.light .navbar-right:hover {
+    background-color: #c0c0c0;
+}
+
+html.dark .navbar-right:hover {
+    background-color: #646464;
+}
+
+html.light .characters {
+    background-color: rgb(189, 233, 189);
+}
+
+html.dark .characters {
+    background-color: rgb(78, 94, 78);
+}
+
+html.light .without-spaces {
+    background-color: rgba(238, 243, 167, 0.801);
+}
+
+html.dark .without-spaces {
+    background-color: rgba(75, 75, 53, 0.801);
+}
+
+html.light .words {
+    background-color:  rgb(165, 196, 223);
+}
+
+html.dark .words {
+    background-color:  rgb(80, 87, 95);
+}
+
+html.light .sentences {
+    background-color:  rgb(248, 205, 239);
+}
+
+html.dark .sentences {
+    background-color:  rgb(92, 79, 88);
+}
+
+html.light .paragraphs {
+    background-color:  rgb(227, 218, 235);
+}
+
+html.dark .paragraphs {
+    background-color:  rgb(89, 77, 100);
+}
+
+html.dark textarea {
+    color: #fff;
+    background-color: #474747;
+}
+
+html.light textarea {
+    color: #333;
+    background-color: #fff;
+}
+
+html.dark .page_theme {
+    background: url('sun_white.svg') 0 0 / 100% no-repeat;
+}
+
+html.light .page_theme {
+    background: url('moon.svg') 0 0 / 100% no-repeat;
+}

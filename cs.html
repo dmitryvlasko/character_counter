@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Počítadlo Znaků</title>
+    <meta name="description" content="Pomocí tohoto počítadla snadno zjistíte, kolik znaků, znaků bez mezer, slov, vět a odstavců je ve vašem textu.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/counter_style.css" rel="stylesheet">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+</head>
+<body> 
+    <header>
+        <nav class="navbar-left">
+            <label>
+                <div class="select-lang">
+                    <a>CS</a>
+                    <button id="select-lang-btn"></button>
+                </div>
+            </label>
+            <ul id="dropdown">
+                <li><a href="de.html">Deutsch</a></li>
+                <li><a href="index.html">English</a></li>
+                <li><a href="es.html">Español</a></li>
+                <li><a href="fr.html">Français</a></li>
+                <li><a href="it.html">Italiano</a></li>
+                <li><a href="pl.html">Polski</a></li>
+                <li><a href="pt.html">Português</a></li>
+                <li><a href="sk.html">Slovenčina</a></li>
+                <li><a href="sl.html">Slovenščina</a></li>
+                <li><a href="uk.html">Українська</a></li>
+                <li><a href="ko.html">한국어</a></li>
+                <li><a href="zh.html">中文(简体)</a></li>
+                <li><a href="ja.html">日本語</a></li>
+            </ul>
+        </nav>
+        <h1>Počítadlo Znaků</h1>
+        <div class="navbar-right">
+            <label>
+                <div class="theme-button">
+                    <button type="button" class="page_theme"></button>
+                </div>
+            </label>    
+        </div>
+    </header>
+    <div class="results">
+        <div class="characters">
+            <div class="characters-title">Znaky</div>
+            <div class="characters-count">0</div>
+        </div>
+        <div class="without-spaces">
+            <div class="without-spaces-title">Znaky bez mezer</div>
+            <div class="without-spaces-count">0</div>
+        </div>
+        <div class="words">
+            <div class="words-title">Slova</div>
+            <div class="words-count">0</div>
+        </div>
+        <div class="sentences">
+            <div class="sentences-title">Věty</div>
+            <div class="sentences-count">0</div>
+        </div>
+        <div class="paragraphs">
+            <div class="paragraphs-title">Odstavce</div>
+            <div class="paragraphs-count">0</div>
+        </div>
+    </div>
+    <div class="textarea">
+        <textarea placeholder="Sem zadejte svůj text..."></textarea>
+    </div>
+    <div class="description">
+        <article>
+            <h2>Počítadlo znaků - co to je?</h2>
+            <p>
+                Počítadlo znaků je nástroj nebo funkce sloužící k počítání počtu znaků v daném textu. Může to být samostatný nástroj, funkce v softwarové aplikaci nebo online služba. Termín "znak" obvykle odkazuje na jakoukoli jednotlivou jednotku textu, která může obsahovat písmena, čísla, interpunkční znaménka, mezery a další symboly.
+            </p>
+            <h2>Co tento nástroj umí?</h2>
+            <p>
+                Pomocí tohoto počítadla snadno zjistíte, kolik znaků, znaků bez mezer, slov, vět a odstavců je ve vašem textu.
+            </p>
+            <h2>Kde může být potřeba počítadlo znaků?</h2>
+            <p>
+                <b>Čítače znaků se běžně používají pro různé účely, například:</b><br>
+                <br>
+                1. <b>Omezení počtu slov:</b> Mnoho platforem, jako jsou stránky sociálních médií nebo systémy pro správu obsahu, zavádí omezení počtu příspěvků nebo obsahu. Počítadlo znaků pomáhá uživatelům zajistit, aby zůstali v těchto limitech.<br>
+                2. <b>Analýza textu:</b> Výzkumníci, spisovatelé a studenti mohou používat počítadla znaků k analýze a měření délky textových pasáží, článků, esejů nebo akademických prací.<br>
+                3. <b>SEO optimalizace:</b> Někteří tvůrci obsahu a vlastníci webových stránek používají počítadla znaků, aby zajistili, že jejich obsah splňuje doporučení určité délky pro lepší optimalizaci pro vyhledávače (SEO).<br>
+                4. <b>Programování a kódování:</b> Při programování může být znalost počtu znaků zásadní, zvláště když se zabýváte textovými vstupy, manipulací s řetězci nebo komentáři ke kódu.<br>
+                5. <b>Zadávání dat a ověřování:</b> Čítače znaků se používají v polích pro zadávání dat, aby uživatelům pomohly zadat správný počet znaků, například ve formulářích nebo online průzkumech.<br>
+                6. <b>Jazyková omezení:</b> V některých případech, jako jsou SMS zprávy nebo chatovací aplikace s omezeným počtem znaků, jsou počítadla znaků důležitá pro zajištění správného odesílání zpráv.<br>
+            </p>
+            <h2>Omezení znaků na sociálních sítích</h2>
+            <p>
+                <b>Twitter:</b><br>
+                Limit počtu znaků pro tweet je 280 znaků. Existují však další omezení pro určité typy obsahu, jako jsou obrázky, odkazy a uživatelská jména, která mohou ovlivnit počet efektivních znaků.<br>
+                <b>Facebook:</b><br>
+                <b>Běžné příspěvky:</b> Pro běžné příspěvky na Facebooku není přísné omezení počtu znaků, ale delší příspěvky mohou být ve zdrojích uživatelů zkráceny. Obecně se však doporučuje udržovat příspěvky stručné a poutavé.<br>
+                <b>Příspěvky na stránce na Facebooku:</b> Stránky na Facebooku mají doporučený počet znaků kolem 40 až 80 znaků pro maximální zapojení.<br>
+                <b>Instagram:</b><br>
+                <b>Titulky na Instagramu:</b> Instagram umožňuje až 2 200 znaků pro titulky u běžných příspěvků. Okamžitě je však viditelných pouze několik prvních řádků a uživatelé musí klepnout na „Více“, aby se zobrazil celý popisek.<br>
+                <b>Životopis Instagramu:</b> Životopis Instagramu umožňuje až 150 znaků.<br>
+                <b>LinkedIn:</b><br>
+                <b>Příspěvky na LinkedIn:</b>
+                Limit počtu znaků pro příspěvky na LinkedIn je 1 300 znaků. Stejně jako na jiných platformách je však vhodné udržovat příspěvky stručné a poutavé.<br>
+                <b>Články LinkedIn:</b>
+                Pro delší obsah publikovaný jako články LinkedIn neexistuje přísný limit počtu znaků. Jde spíše o poskytování hodnotného obsahu.<br>
+                <b>Snapchat:</b><br>
+                Limit počtu znaků Snapchatu se liší v závislosti na typu obsahu. Textové titulky pro Snaps mají limit 80 znaků, zatímco titulky pro Snapchat Stories mají limit 33 znaků.<br>
+                <b>TikTok:</b><br>
+                Videa TikTok jsou krátká a obvykle neobsahují mnoho textu. Titulky videa mohou mít různou délku, ale obecně jsou krátké a výstižné.<br>
+            </p>
+        </article>
+    </div>
+    <script src="js/counter_script.js"></script>
+    <script src="js/select_theme_script.js"></script>
+    <script src="js/select_lang_script.js"></script>
+</body>
+</html>

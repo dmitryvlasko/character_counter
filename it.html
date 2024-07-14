@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Contatore di caratteri online</title>
+    <meta name="description" content="Con l'aiuto di questo contatore, puoi facilmente scoprire quanti caratteri, caratteri senza spazi, parole, frasi e paragrafi ci sono nel tuo testo.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/counter_style.css" rel="stylesheet">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+</head>
+<body> 
+    <header>
+        <nav class="navbar-left">
+            <label>
+                <div class="select-lang">
+                    <a>IT</a>
+                    <button id="select-lang-btn"></button>
+                </div>
+            </label>
+            <ul id="dropdown">
+                <li><a href="cs.html">Čeština</a></li>
+                <li><a href="de.html">Deutsch</a></li>
+                <li><a href="index.html">English</a></li>
+                <li><a href="es.html">Español</a></li>
+                <li><a href="fr.html">Français</a></li>
+                <li><a href="pl.html">Polski</a></li>
+                <li><a href="pt.html">Português</a></li>
+                <li><a href="sk.html">Slovenčina</a></li>
+                <li><a href="sl.html">Slovenščina</a></li>
+                <li><a href="uk.html">Українська</a></li>
+                <li><a href="ko.html">한국어</a></li>
+                <li><a href="zh.html">中文(简体)</a></li>
+                <li><a href="ja.html">日本語</a></li>
+            </ul>
+        </nav>
+        <h1>Contatore Caratteri</h1>
+        <div class="navbar-right">
+            <label>
+                <div class="theme-button">
+                    <button type="button" class="page_theme"></button>
+                </div>
+            </label>    
+        </div>
+    </header>
+    <div class="results">
+        <div class="characters">
+            <div class="characters-title">Caratteri</div>
+            <div class="characters-count">0</div>
+        </div>
+        <div class="without-spaces">
+            <div class="without-spaces-title">Senza Spazi</div>
+            <div class="without-spaces-count">0</div>
+        </div>
+        <div class="words">
+            <div class="words-title">Parole</div>
+            <div class="words-count">0</div>
+        </div>
+        <div class="sentences">
+            <div class="sentences-title">Frasi</div>
+            <div class="sentences-count">0</div>
+        </div>
+        <div class="paragraphs">
+            <div class="paragraphs-title">Paragrafi</div>
+            <div class="paragraphs-count">0</div>
+        </div>
+    </div>
+    <div class="textarea">
+        <textarea placeholder="Inserisci qui il tuo testo..."></textarea>
+    </div>
+    <div class="description">
+        <article>
+            <h2>Contatore caratteri: che cos'è?</h2>
+            <p>
+                Un contatore di caratteri è uno strumento o una funzione utilizzata per contare il numero di caratteri in un dato testo. Può essere uno strumento autonomo, una funzionalità in un'applicazione software o un servizio online. Il termine "carattere" si riferisce in genere a qualsiasi singola unità di testo, che può includere lettere, numeri, segni di punteggiatura, spazi e altri simboli.
+            </p>
+            <h2>Cosa può fare questo strumento?</h2>
+            <p>
+                Con l'aiuto di questo contatore, puoi facilmente scoprire quanti caratteri, caratteri senza spazi, parole, frasi e paragrafi ci sono nel tuo testo.
+            </p>
+            <h2>Dove potrebbe essere necessario un contatore di caratteri?</h2>
+            <p>
+                <b>I contatori di caratteri sono comunemente usati per vari scopi, come:</b><br>
+                <br>
+                1. <b>Limiti di parole:</b> Molte piattaforme, come i siti di social media o i sistemi di gestione dei contenuti, impongono limiti di caratteri per i post o l'invio di contenuti. Un contatore di caratteri aiuta gli utenti a garantire di rimanere entro questi limiti.<br>
+                2. <b>Analisi del testo:</b> Ricercatori, scrittori e studenti potrebbero utilizzare i contatori di caratteri per analizzare e misurare la lunghezza di passaggi di testo, articoli, saggi o documenti accademici.<br>
+                3. <b>Ottimizzazione SEO:</b> Alcuni creatori di contenuti e proprietari di siti Web utilizzano contatori di caratteri per garantire che i loro contenuti soddisfino determinate raccomandazioni di lunghezza per una migliore ottimizzazione dei motori di ricerca (SEO).<br>
+                4. <b>Programmazione e codifica:</b> Nella programmazione, conoscere il numero di caratteri può essere essenziale, soprattutto quando si tratta di input di testo, manipolazione di stringhe o commenti di codice.<br>
+                5. <b>Inserimento dati e convalida:</b> I contatori di caratteri vengono utilizzati nei campi di inserimento dati per aiutare gli utenti a inserire il numero corretto di caratteri, ad esempio nei moduli o nei sondaggi online.<br>
+                6. <b>Limitazioni linguistiche:</b> In alcuni casi, come i messaggi SMS o le applicazioni di chat con limiti di caratteri, i contatori di caratteri sono importanti per garantire che i messaggi vengano inviati correttamente.<br>
+            </p>
+            <h2>Limiti di caratteri sui social network</h2>
+            <p>
+                <b>Twitter:</b><br>
+                Il limite di caratteri per un tweet è di 280 caratteri. Tuttavia, esistono limitazioni aggiuntive per determinati tipi di contenuto, come immagini, collegamenti e nomi utente, che possono influire sul conteggio effettivo dei caratteri.<br>
+                <b>Facebook:</b><br>
+                <b>Post regolari:</b> Non esiste un limite di caratteri rigoroso per i post regolari di Facebook, ma i post più lunghi potrebbero essere troncati nei feed degli utenti. Tuttavia, in genere si consiglia di mantenere i post concisi e accattivanti.<br>
+                <b>Post della pagina Facebook:</b> Le pagine Facebook hanno un limite di caratteri consigliato di circa 40-80 caratteri per il massimo coinvolgimento.<br>
+                <b>Instagram:</b><br>
+                <b>Sottotitoli di Instagram:</b> Instagram consente fino a 2.200 caratteri per i sottotitoli sui post regolari. Tuttavia, solo le prime righe sono immediatamente visibili e gli utenti devono toccare "Altro" per vedere la didascalia completa.<br>
+                <b>Biografia di Instagram:</b> La biografia di Instagram consente fino a 150 caratteri.<br>
+                <b>LinkedIn:</b><br>
+                <b>Post di LinkedIn:</b>
+                Il limite di caratteri per i post di LinkedIn è di 1.300 caratteri. Tuttavia, come altre piattaforme, è consigliabile mantenere i post concisi e coinvolgenti.<br>
+                <b>Articoli di LinkedIn:</b>
+                Per i contenuti più lunghi pubblicati come articoli di LinkedIn, non esiste un limite di caratteri rigoroso. Si tratta più di fornire contenuti di valore.<br>
+                <b>Snapchat:</b><br>
+                Il limite di caratteri di Snapchat varia a seconda del tipo di contenuto. I sottotitoli di testo per gli Snap hanno un limite di 80 caratteri, mentre i sottotitoli per le Storie di Snapchat hanno un limite di 33 caratteri.<br>
+                <b>TikTok:</b><br>
+                I video di TikTok sono di breve durata e in genere non contengono molto testo. I sottotitoli dei video possono variare in lunghezza, ma sono generalmente brevi e concisi.<br>
+            </p>
+        </article>
+    </div>
+    <script src="js/counter_script.js"></script>
+    <script src="js/select_theme_script.js"></script>
+    <script src="js/select_lang_script.js"></script>
+</body>
+</html>

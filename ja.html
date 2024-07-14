@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>文字数カウンター</title>
+    <meta name="description" content="このカウンターを使用すると、テキスト内の文字数、スペースのない文字数、単語、文、段落の数を簡単に確認できます。">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/counter_style.css" rel="stylesheet">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+</head>
+<body> 
+    <header>
+        <nav class="navbar-left">
+            <label>
+                <div class="select-lang">
+                    <a>JA</a>
+                    <button id="select-lang-btn"></button>
+                </div>
+            </label>
+            <ul id="dropdown">
+                <li><a href="cs.html">Čeština</a></li>
+                <li><a href="de.html">Deutsch</a></li>
+                <li><a href="index.html">English</a></li>
+                <li><a href="es.html">Español</a></li>
+                <li><a href="fr.html">Français</a></li>
+                <li><a href="it.html">Italiano</a></li>
+                <li><a href="pl.html">Polski</a></li>
+                <li><a href="pt.html">Português</a></li>
+                <li><a href="sk.html">Slovenčina</a></li>
+                <li><a href="sl.html">Slovenščina</a></li>
+                <li><a href="uk.html">Українська</a></li>
+                <li><a href="ko.html">한국어</a></li>
+                <li><a href="zh.html">中文(简体)</a></li>
+            </ul>
+        </nav>
+        <h1>文字数カウンター</h1>
+        <div class="navbar-right">
+            <label>
+                <div class="theme-button">
+                    <button type="button" class="page_theme"></button>
+                </div>
+            </label>    
+        </div>
+    </header>
+    <div class="results">
+        <div class="characters">
+            <div class="characters-title">文字数</div>
+            <div class="characters-count">0</div>
+        </div>
+        <div class="without-spaces">
+            <div class="without-spaces-title">スペースを除く文字数</div>
+            <div class="without-spaces-count">0</div>
+        </div>
+        <div class="words">
+            <div class="words-title">単語数</div>
+            <div class="words-count">0</div>
+        </div>
+        <div class="sentences">
+            <div class="sentences-title">文の数</div>
+            <div class="sentences-count">0</div>
+        </div>
+        <div class="paragraphs">
+            <div class="paragraphs-title">段落数</div>
+            <div class="paragraphs-count">0</div>
+        </div>
+    </div>
+    <div class="textarea">
+        <textarea placeholder="ここにテキストを入力してください..."></textarea>
+    </div>
+    <div class="description">
+        <article>
+            <h2>キャラクターカウンター - これは何ですか?</h2>
+            <p>
+                文字カウンターは、特定のテキスト内の文字数をカウントするために使用されるツールまたは機能です。 これは、スタンドアロン ツール、ソフトウェア アプリケーションの機能、またはオンライン サービスの場合があります。 「文字」という用語は通常、文字、数字、句読点、スペース、その他の記号を含むテキストの個々の単位を指します。
+            </p>
+            <h2>このツールで何ができるのでしょうか?</h2>
+            <p>
+                このカウンターを使用すると、テキスト内の文字数、スペースのない文字数、単語、文、段落の数を簡単に確認できます。
+            </p>
+            <h2>文字カウンターが必要になるのはどこですか?</h2>
+            <p>
+                <b>文字カウンターは通常、次のようなさまざまな目的に使用されます:</b><br>
+                <br>
+                1. <b>文字数制限:</b> ソーシャル メディア サイトやコンテンツ管理システムなどの多くのプラットフォームでは、投稿やコンテンツの送信に文字数制限を設けています。 文字カウンターは、ユーザーがこれらの制限内に収まることを確認するのに役立ちます。<br>
+                2. <b>テキスト分析:</b> 研究者、作家、学生は、文字カウンターを使用して、テキストの一節、記事、エッセイ、または学術論文の長さを分析および測定する場合があります。<br>
+                3. <b>検索エンジン最適化:</b> 一部のコンテンツ作成者や ウェブ サイト所有者は、文字カウンターを使用して、コンテンツが検索エンジン最適化 (SEO) を向上させるための特定の長さの推奨事項を満たしていることを確認します。<br>
+                4. <b>プログラミングとコーディング:</b> プログラミングでは、特にテキスト入力、文字列操作、またはコード コメントを扱う場合、文字数を知ることが不可欠です。<br>
+                5. <b>データ入力と検証:</b> 文字カウンターは、ユーザーがフォームやオンライン アンケートなどで正しい文字数を入力できるように、データ入力フィールドで使用されます。<br>
+                6. <b>言語制限:</b> 文字制限のある メッセージやチャット アプリケーションなど、場合によっては、メッセージが正しく送信されることを確認するために文字カウンターが重要になります。<br>
+            </p>
+            <h2>ソーシャルネットワークでの文字数制限</h2>
+            <p>
+                <b>ツイッター:</b><br>
+                ツイートの文字数制限は 280 文字です。 ただし、画像、リンク、ユーザー名などの特定の種類のコンテンツには追加の制限があり、有効な文字数に影響を与える可能性があります。<br>
+                <b>フェイスブック:</b><br>
+                <b>通常の投稿:</b> フェイスブック の通常の投稿には厳密な文字数制限はありませんが、長い投稿はユーザーのフィードで切り捨てられる可能性があります。 ただし、一般的には、投稿を簡潔かつ魅力的にすることをお勧めします。<br>
+                <b>フェイスブックページの投稿:</b> フェイスブック ページでは、最大限のエンゲージメントを実現するために、推奨される文字数制限を約 40 ～ 80 文字に設定しています。<br>
+                <b>インスタグラム:</b><br>
+                <b>インスタグラムのキャプション:</b> インスタグラム では、通常の投稿のキャプションに最大 2,200 文字を使用できます。 ただし、すぐに表示されるのは最初の数行だけであり、キャプション全体を表示するには「詳細」をタップする必要があります。<br>
+                <b>インスタグラムのプロフィール:</b> インスタグラム のプロフィールには最大 150 文字を入力できます。<br>
+                <b>リンクトイン:</b><br>
+                <b>リンクトイン の投稿:</b>
+                リンクトイン の投稿の文字数制限は 1,300 文字です。 ただし、他のプラットフォームと同様に、投稿は簡潔で魅力的なものにすることをお勧めします。<br>
+                <b>リンクトイン の記事:</b>
+                リンクトイン の記事として公開される長文コンテンツの場合、厳密な文字数制限はありません。 それよりも価値のあるコンテンツを提供することが重要です。<br>
+                <b>スナップチャット:</b><br>
+                スナップチャット の文字数制限はコンテンツの種類によって異なります。 スナップのテキスト キャプションには 80 文字の制限がありますが、スナップチャット ストーリーのキャプションには 33 文字の制限があります。<br>
+                <b>ティックトック:</b><br>
+                ティックトックビデオは短い形式であり、通常は多くのテキストが含まれていません。 ビデオのキャプションの長さはさまざまですが、通常は短く簡潔です。<br>
+            </p>
+        </article>
+    </div>
+    <script src="js/counter_script.js"></script>
+    <script src="js/select_theme_script.js"></script>
+    <script src="js/select_lang_script.js"></script>
+</body>
+</html>

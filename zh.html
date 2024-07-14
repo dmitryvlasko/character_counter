@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>字符计数器</title>
+    <meta name="description" content="借助此计数器，您可以轻松找出文本中有多少个字符、没有空格的字符、单词、句子和段落。">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/counter_style.css" rel="stylesheet">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+</head>
+<body> 
+    <header>
+        <nav class="navbar-left">
+            <label>
+                <div class="select-lang">
+                    <a>ZH</a>
+                    <button id="select-lang-btn"></button>
+                </div>
+            </label>
+            <ul id="dropdown">
+                <li><a href="cs.html">Čeština</a></li>
+                <li><a href="de.html">Deutsch</a></li>
+                <li><a href="index.html">English</a></li>
+                <li><a href="es.html">Español</a></li>
+                <li><a href="fr.html">Français</a></li>
+                <li><a href="it.html">Italiano</a></li>
+                <li><a href="pl.html">Polski</a></li>
+                <li><a href="pt.html">Português</a></li>
+                <li><a href="sk.html">Slovenčina</a></li>
+                <li><a href="sl.html">Slovenščina</a></li>
+                <li><a href="uk.html">Українська</a></li>
+                <li><a href="ko.html">한국어</a></li>
+                <li><a href="ja.html">日本語</a></li>
+            </ul>
+        </nav>
+        <h1>字符计数器</h1>
+        <div class="navbar-right">
+            <label>
+                <div class="theme-button">
+                    <button type="button" class="page_theme"></button>
+                </div>
+            </label>    
+        </div>
+    </header>
+    <div class="results">
+        <div class="characters">
+            <div class="characters-title">字符</div>
+            <div class="characters-count">0</div>
+        </div>
+        <div class="without-spaces">
+            <div class="without-spaces-title">不包含空格的字符数</div>
+            <div class="without-spaces-count">0</div>
+        </div>
+        <div class="words">
+            <div class="words-title">单词</div>
+            <div class="words-count">0</div>
+        </div>
+        <div class="sentences">
+            <div class="sentences-title">句子</div>
+            <div class="sentences-count">0</div>
+        </div>
+        <div class="paragraphs">
+            <div class="paragraphs-title">段落</div>
+            <div class="paragraphs-count">0</div>
+        </div>
+    </div>
+    <div class="textarea">
+        <textarea placeholder="在此输入文字。"></textarea>
+    </div>
+    <div class="description">
+        <article>
+            <h2>字符计数器 - 这是什么</h2>
+            <p>
+                字符计数器是一种用于计算给定文本中字符数的工具或功能。 它可以是一个独立的工具、软件应用程序中的一项功能或在线服务。 术语“字符”通常指任何单独的文本单元，其可以包括字母、数字、标点符号、空格和其他符号。
+            </p>
+            <h2>这个工具能做什么？</h2>
+            <p>
+                借助此计数器，您可以轻松找出文本中有多少个字符、没有空格的字符、单词、句子和段落。
+            </p>
+            <h2>哪里可能需要字符计数器？</h2>
+            <p>
+                <b>字符计数器通常用于各种目的，例如：</b><br>
+                <br>
+                1. <b>字数限制：</b> 许多平台，例如社交媒体网站或内容管理系统，对帖子或内容提交施加字符限制。 字符计数器可以帮助用户确保他们保持在这些限制之内。<br>
+                2. <b> 文本分析：</b> 研究人员、作家和学生可能会使用字符计数器来分析和测量文本段落、文章、论文或学术论文的长度。<br>
+                3. <b>搜索引擎优化：</b> 一些内容创建者和网站所有者使用字符计数器来确保其内容满足一定的长度建议，以实现更好的搜索引擎优化 (SEO)。<br>
+                4. <b>编程和编码：</b> 在编程中，了解字符数至关重要，尤其是在处理文本输入、字符串操作或代码注释时。<br>
+                5. <b>数据输入和验证：</b> 字符计数器用于数据输入字段，以帮助用户输入正确的字符数，例如在表格或在线调查中。<br>
+                6. <b>语言限制：</b> 在某些情况下，例如短信或有字符限制的聊天应用程序，字符计数器对于确保正确发送消息非常重要。<br>
+            </p>
+            <h2>社交网络的字符限制</h2>
+            <p>
+                <b>推特：</b><br>
+                推文的字符数限制为 280 个字符。 但是，某些类型的内容（例如图像、链接和用户名）存在其他限制，这可能会影响有效字符数。<br>
+                <b>脸书：</b><br>
+                <b>常规帖子：</b> 常规 脸书 帖子没有严格的字符限制，但较长的帖子可能会在用户的源中被截断。 但是，通常建议保持帖子简洁且有吸引力。<br>
+                <b>脸书 页面帖子：</b> 脸书 页面的建议字符数限制为 40 到 80 个字符左右，以实现最大程度的参与。<br>
+                <b>Instagram：</b><br>
+                <b>Instagram 标题：</b> Instagram 允许常规帖子的标题最多包含 2,200 个字符。 然而，只有前几行是立即可见的，用户需要点击“更多”才能看到完整的标题。<br>
+                <b>Instagram 简介：</b> Instagram 简介最多允许 150 个字符。<br>
+                <b>领英：</b><br>
+                <b>领英帖子：</b>
+                领英 帖子的字符数限制为 1,300 个字符。 然而，与其他平台一样，建议保持帖子简洁且有吸引力。<br>
+                <b>领英文章：</b>
+                对于以 领英 文章形式发布的较长内容，没有严格的字符限制。 更多的是提供有价值的内容。<br>
+                <b>Snapchat：</b><br>
+                Snapchat 的字符限制因内容类型而异。 快照 的文本标题限制为 80 个字符，而 Snapchat Stories 的标题限制为 33 个字符。<br>
+                <b>抖音：</b><br>
+                >抖音 视频都是短视频，通常没有太多文字。 视频字幕的长度可能有所不同，但通常都很简短。<br>
+            </p>
+        </article>
+    </div>
+    <script src="js/counter_script.js"></script>
+    <script src="js/select_theme_script.js"></script>
+    <script src="js/select_lang_script.js"></script>
+</body>
+</html>

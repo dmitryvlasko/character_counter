@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <title>Števec Znakov</title>
+    <meta name="description" content="S pomočjo tega števca lahko preprosto ugotovite, koliko znakov, znakov brez presledkov, besed, stavkov in odstavkov je v vašem besedilu.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/counter_style.css" rel="stylesheet">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+</head>
+<body> 
+    <header>
+        <nav class="navbar-left">
+            <label>
+                <div class="select-lang">
+                    <a>SL</a>
+                    <button id="select-lang-btn"></button>
+                </div>
+            </label>
+            <ul id="dropdown">
+                <li><a href="cs.html">Čeština</a></li>
+                <li><a href="de.html">Deutsch</a></li>
+                <li><a href="index.html">English</a></li>
+                <li><a href="es.html">Español</a></li>
+                <li><a href="fr.html">Français</a></li>
+                <li><a href="it.html">Italiano</a></li>
+                <li><a href="pl.html">Polski</a></li>
+                <li><a href="pt.html">Português</a></li>
+                <li><a href="sk.html">Slovenčina</a></li>
+                <li><a href="uk.html">Українська</a></li>
+                <li><a href="ko.html">한국어</a></li>
+                <li><a href="zh.html">中文(简体)</a></li>
+                <li><a href="ja.html">日本語</a></li>
+            </ul>
+        </nav>
+        <h1>Števec Znakov</h1>
+        <div class="navbar-right">
+            <label>
+                <div class="theme-button">
+                    <button type="button" class="page_theme"></button>
+                </div>
+            </label>    
+        </div>
+    </header>
+    <div class="results">
+        <div class="characters">
+            <div class="characters-title">Znaki</div>
+            <div class="characters-count">0</div>
+        </div>
+        <div class="without-spaces">
+            <div class="without-spaces-title">Brez presledkov</div>
+            <div class="without-spaces-count">0</div>
+        </div>
+        <div class="words">
+            <div class="words-title">Besede</div>
+            <div class="words-count">0</div>
+        </div>
+        <div class="sentences">
+            <div class="sentences-title">Stavki</div>
+            <div class="sentences-count">0</div>
+        </div>
+        <div class="paragraphs">
+            <div class="paragraphs-title">Odstavki</div>
+            <div class="paragraphs-count">0</div>
+        </div>
+    </div>
+    <div class="textarea">
+        <textarea placeholder="Tukaj vnesite svoje besedilo..."></textarea>
+    </div>
+    <div class="description">
+        <article>
+            <h2>Števec znakov - kaj je to?</h2>
+            <p>
+                Števec znakov je orodje ali funkcija, ki se uporablja za štetje števila znakov v danem besedilu. Lahko je samostojno orodje, funkcija v programski aplikaciji ali spletna storitev. Izraz "znak" se običajno nanaša na katero koli posamezno enoto besedila, ki lahko vključuje črke, številke, ločila, presledke in druge simbole.
+            </p>
+            <h2>Kaj lahko naredi to orodje?</h2>
+            <p>
+                S pomočjo tega števca lahko preprosto ugotovite, koliko znakov, znakov brez presledkov, besed, stavkov in odstavkov je v vašem besedilu.
+            </p>
+            <h2>Kje je morda potreben števec znakov?</h2>
+            <p>
+                <b>Števci znakov se običajno uporabljajo za različne namene, kot so:</b><br>
+                <br>
+                1. <b>Omejitve besed:</b> Številne platforme, kot so spletna mesta družbenih medijev ali sistemi za upravljanje vsebine, določajo omejitve znakov za objave ali oddajo vsebine. Števec znakov pomaga uporabnikom zagotoviti, da ostanejo znotraj teh omejitev.<br>
+                2. <b>Analiza besedila:</b> Raziskovalci, pisci in študenti lahko uporabljajo števce znakov za analizo in merjenje dolžine odlomkov besedila, člankov, esejev ali akademskih člankov.<br>
+                3. <b>SEO optimizacija:</b> Nekateri ustvarjalci vsebin in lastniki spletnih mest uporabljajo števce znakov, da zagotovijo, da njihova vsebina ustreza določenim priporočilom glede dolžine za boljšo optimizacijo iskalnikov (SEO).<br>
+                4. <b>Programiranje in kodiranje:</b> Pri programiranju je poznavanje števila znakov lahko bistvenega pomena, zlasti pri vnosu besedila, manipulaciji nizov ali komentarjih kode.<br>
+                5. <b>Vnos in preverjanje podatkov:</b> Števci znakov se uporabljajo v poljih za vnos podatkov, da uporabnikom pomagajo pri vnosu pravilnega števila znakov, na primer v obrazcih ali spletnih anketah.<br>
+                6. <b>Jezikovne omejitve:</b> V nekaterih primerih, kot so sporočila SMS ali aplikacije za klepet z omejitvami znakov, so števci znakov pomembni za zagotovitev pravilnega pošiljanja sporočil.<br>
+            </p>
+            <h2>Omejitve znakov na družbenih omrežjih</h2>
+            <p>
+                <b>Twitter:</b><br>
+                Omejitev znakov za tvit je 280 znakov. Vendar pa obstajajo dodatne omejitve za nekatere vrste vsebine, kot so slike, povezave in uporabniška imena, ki lahko vplivajo na dejansko število znakov.<br>
+                <b>Facebook:</b><br>
+                <b>Običajne objave:</b> Za običajne objave na Facebooku ni stroge omejitve znakov, vendar so lahko daljše objave okrnjene v virih uporabnikov. Vendar je na splošno priporočljivo, da so objave jedrnate in privlačne.<br>
+                <b>Objave na Facebook strani:</b> Facebook strani imajo priporočeno omejitev znakov od približno 40 do 80 znakov za največjo angažiranost.<br>
+                <b>Instagram:</b><br>
+                <b>Napisi na Instagramu:</b> Instagram dovoljuje do 2200 znakov za napise na običajnih objavah. Vendar je takoj vidnih samo prvih nekaj vrstic in uporabniki se morajo dotakniti »Več«, da vidijo celoten napis.<br>
+                <b>Instagram biografija:</b> Instagram biografija dovoljuje do 150 znakov.<br>
+                <b>LinkedIn:</b><br>
+                <b>Objave na LinkedInu:</b>
+                Omejitev znakov za objave na LinkedInu je 1300 znakov. Vendar pa je, tako kot pri drugih platformah, priporočljivo, da so objave jedrnate in privlačne.<br>
+                <b>Članki LinkedIn:</b>
+                Za vsebino daljše oblike, objavljeno kot članki LinkedIn, ni stroge omejitve znakov. Gre bolj za zagotavljanje dragocene vsebine.<br>
+                <b>Snapchat:</b><br>
+                Omejitev znakov za Snapchat se razlikuje glede na vrsto vsebine. Besedilni napisi za Snaps imajo omejitev 80 znakov, medtem ko imajo napisi za Snapchat Stories omejitev 33 znakov.<br>
+                <b>TikTok:</b><br>
+                Videoposnetki TikTok so kratki in običajno nimajo veliko besedila. Podnapisi videoposnetkov so lahko različno dolgi, vendar so na splošno kratki in jedrnati.<br>
+            </p>
+        </article>
+    </div>
+    <script src="js/counter_script.js"></script>
+    <script src="js/select_theme_script.js"></script>
+    <script src="js/select_lang_script.js"></script>
+</body>
+</html>

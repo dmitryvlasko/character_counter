@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Character Counter Online</title>
+    <meta name="description" content="With the help of this counter, you can easily find out how many characters, characters without spaces, words, sentences and paragraphs are in your text.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/counter_style.css" rel="stylesheet">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+</head>
+<body> 
+    <header>
+        <nav class="navbar-left">
+            <label>
+                <div class="select-lang">
+                    <a>EN</a>
+                    <button id="select-lang-btn"></button>
+                </div>
+            </label>
+            <ul id="dropdown">
+                <li><a href="cs.html">Čeština</a></li>
+                <li><a href="de.html">Deutsch</a></li>
+                <li><a href="es.html">Español</a></li>
+                <li><a href="fr.html">Français</a></li>
+                <li><a href="it.html">Italiano</a></li>
+                <li><a href="pl.html">Polski</a></li>
+                <li><a href="pt.html">Português</a></li>
+                <li><a href="sk.html">Slovenčina</a></li>
+                <li><a href="sl.html">Slovenščina</a></li>
+                <li><a href="uk.html">Українська</a></li>
+                <li><a href="ko.html">한국어</a></li>
+                <li><a href="zh.html">中文(简体)</a></li>
+                <li><a href="ja.html">日本語</a></li>
+            </ul>
+        </nav>
+        <h1>Character Counter</h1>
+        <div class="navbar-right">
+            <label>
+                <div class="theme-button">
+                    <button type="button" class="page_theme"></button>
+                </div>
+            </label>    
+        </div>
+    </header>
+    <div class="results">
+        <div class="characters">
+            <div class="characters-title">Characters</div>
+            <div class="characters-count">0</div>
+        </div>
+        <div class="without-spaces">
+            <div class="without-spaces-title">Without Spaces</div>
+            <div class="without-spaces-count">0</div>
+        </div>
+        <div class="words">
+            <div class="words-title">Words</div>
+            <div class="words-count">0</div>
+        </div>
+        <div class="sentences">
+            <div class="sentences-title">Sentences</div>
+            <div class="sentences-count">0</div>
+        </div>
+        <div class="paragraphs">
+            <div class="paragraphs-title">Paragraphs</div>
+            <div class="paragraphs-count">0</div>
+        </div>
+    </div>
+    <div class="textarea">
+        <textarea placeholder="Type in your text here..."></textarea>
+    </div>
+    <div class="description">
+        <article>
+            <h2>Character Counter - what is this?</h2>
+            <p>
+                A character counter is a tool or feature used to count the number of characters in a given text. It can be a standalone tool, a feature in a software application, or an online service. The term "character" typically refers to any individual unit of text, which can include letters, numbers, punctuation marks, spaces, and other symbols.
+            </p>
+            <h2>What can this tool do?</h2>
+            <p>
+                With the help of this counter, you can easily find out how many characters, characters without spaces, words, sentences and paragraphs are in your text.
+            </p>
+            <h2>Where a character counter might be needed?</h2>
+            <p>
+                <b>Character counters are commonly used for various purposes, such as:</b><br>
+                <br>
+                1. <b>Word Limits:</b> Many platforms, such as social media sites or content management systems, impose character limits for posts or content submissions. A character counter helps users ensure they stay within these limits.<br>
+                2. <b>Text Analysis:</b> Researchers, writers, and students might use character counters to analyze and measure the length of text passages, articles, essays, or academic papers.<br>
+                3. <b>SEO Optimization:</b> Some content creators and website owners use character counters to ensure that their content meets certain length recommendations for better search engine optimization (SEO).<br>
+                4. <b>Programming and Coding:</b> In programming, knowing the character count can be essential, especially when dealing with text inputs, string manipulation, or code comments.<br>
+                5. <b>Data Entry and Validation:</b> Character counters are used in data entry fields to help users input the correct number of characters, such as in forms or online surveys.<br>
+                6. <b>Language Limitations:</b> In some cases, like SMS messages or chat applications with character limits, character counters are important to ensure messages are sent correctly.<br>
+            </p>
+            <h2>Character limits on social networks</h2>
+            <p>
+                <b>Twitter:</b><br>
+                The character limit for a tweet is 280 characters. However, there are additional limitations for certain types of content, such as images, links, and usernames, which can affect the effective character count.<br>
+                <b>Facebook:</b><br>
+                <b>Regular posts:</b> There is no strict character limit for regular Facebook posts, but longer posts might get truncated in users' feeds. However, it's generally recommended to keep posts concise and engaging.<br>
+                <b>Facebook Page posts:</b> Facebook Pages have a recommended character limit of around 40 to 80 characters for maximum engagement.<br>
+                <b>Instagram:</b><br>
+                <b>Instagram captions:</b> Instagram allows up to 2,200 characters for captions on regular posts. However, only the first few lines are immediately visible, and users need to tap "More" to see the full caption.<br>
+                <b>Instagram bio:</b> The Instagram bio allows up to 150 characters.<br>
+                <b>LinkedIn:</b><br>
+                <b>LinkedIn posts:</b>
+                The character limit for LinkedIn posts is 1,300 characters. However, like other platforms, it's advisable to keep posts concise and engaging.<br>
+                <b>LinkedIn articles:</b>
+                For longer-form content published as LinkedIn articles, there isn't a strict character limit. It's more about providing valuable content.<br>
+                <b>Snapchat:</b><br>
+                Snapchat's character limit varies depending on the type of content. Text captions for Snaps have a limit of 80 characters, while captions for Snapchat Stories have a limit of 33 characters.<br>
+                <b>TikTok:</b><br>
+                TikTok videos are short-form and typically don't have a lot of text. Video captions can vary in length, but they're generally short and concise.<br>
+            </p>
+        </article>
+    </div>   
+    <script src="js/counter_script.js"></script>
+    <script src="js/select_theme_script.js"></script>
+    <script src="js/select_lang_script.js"></script>
+</body>
+</html>

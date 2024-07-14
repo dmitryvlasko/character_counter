@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Compteur de caractères en ligne</title>
+    <meta name="description" content="Avec l'aide de ce compteur, vous pouvez facilement savoir combien de caractères, de caractères sans espaces, de mots, de phrases et de paragraphes se trouvent dans votre texte.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/counter_style.css" rel="stylesheet">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+</head>
+<body> 
+    <header>
+        <nav class="navbar-left">
+            <label>
+                <div class="select-lang">
+                    <a>FR</a>
+                    <button id="select-lang-btn"></button>
+                </div>
+            </label>
+            <ul id="dropdown">
+                <li><a href="cs.html">Čeština</a></li>
+                <li><a href="de.html">Deutsch</a></li>
+                <li><a href="index.html">English</a></li>
+                <li><a href="es.html">Español</a></li>
+                <li><a href="it.html">Italiano</a></li>
+                <li><a href="pl.html">Polski</a></li>
+                <li><a href="pt.html">Português</a></li>
+                <li><a href="sk.html">Slovenčina</a></li>
+                <li><a href="sl.html">Slovenščina</a></li>
+                <li><a href="uk.html">Українська</a></li>
+                <li><a href="ko.html">한국어</a></li>
+                <li><a href="zh.html">中文(简体)</a></li>
+                <li><a href="ja.html">日本語</a></li>
+            </ul>
+        </nav>
+        <h1>Compteur de Caractères</h1>
+        <div class="navbar-right">
+            <label>
+                <div class="theme-button">
+                    <button type="button" class="page_theme"></button>
+                </div>
+            </label>    
+        </div>
+    </header>
+    <div class="results">
+        <div class="characters">
+            <div class="characters-title">Caractères</div>
+            <div class="characters-count">0</div>
+        </div>
+        <div class="without-spaces">
+            <div class="without-spaces-title">Sans espaces</div>
+            <div class="without-spaces-count">0</div>
+        </div>
+        <div class="words">
+            <div class="words-title">Mots</div>
+            <div class="words-count">0</div>
+        </div>
+        <div class="sentences">
+            <div class="sentences-title">Phrases</div>
+            <div class="sentences-count">0</div>
+        </div>
+        <div class="paragraphs">
+            <div class="paragraphs-title">Paragraphes</div>
+            <div class="paragraphs-count">0</div>
+        </div>
+    </div>
+    <div class="textarea">
+        <textarea placeholder="Saisissez votre texte ici..."></textarea>
+    </div>
+    <div class="description">
+        <article>
+            <h2>Compteur de caractères - qu'est-ce que c'est ?</h2>
+            <p>
+                Un compteur de caractères est un outil ou une fonctionnalité utilisé pour compter le nombre de caractères dans un texte donné. Il peut s'agir d'un outil autonome, d'une fonctionnalité d'une application logicielle ou d'un service en ligne. Le terme « caractère » fait généralement référence à toute unité de texte individuelle, qui peut inclure des lettres, des chiffres, des signes de ponctuation, des espaces et d'autres symboles.
+            </p>
+            <h2>Que peut faire cet outil ?</h2>
+            <p>
+                Avec l'aide de ce compteur, vous pouvez facilement savoir combien de caractères, de caractères sans espaces, de mots, de phrases et de paragraphes se trouvent dans votre texte.
+            </p>
+            <h2>Où un compteur de caractères pourrait-il être nécessaire ?</h2>
+            <p>
+                <b>Les compteurs de caractères sont couramment utilisés à diverses fins, telles que :</b><br>
+                <br>
+                1. <b>Limites de mots :</b> De nombreuses plates-formes, telles que les sites de médias sociaux ou les systèmes de gestion de contenu, imposent des limites de caractères pour les publications ou les soumissions de contenu. Un compteur de caractères aide les utilisateurs à s'assurer qu'ils restent dans ces limites.<br>
+                2. <b>Analyse de texte :</b> Les chercheurs, les écrivains et les étudiants peuvent utiliser des compteurs de caractères pour analyser et mesurer la longueur de passages de texte, d'articles, d'essais ou de documents universitaires.<br>
+                3. <b>Optimisation SEO :</b> Certains créateurs de contenu et propriétaires de sites Web utilisent des compteurs de caractères pour s'assurer que leur contenu respecte certaines recommandations de longueur pour une meilleure optimisation des moteurs de recherche (SEO).<br>
+                4. <b>Programmation et codage :</b> En programmation, connaître le nombre de caractères peut être essentiel, en particulier lorsqu'il s'agit d'entrées de texte, de manipulation de chaînes ou de commentaires de code.<br>
+                5. <b>Saisie et validation des données :</b> Les compteurs de caractères sont utilisés dans les champs de saisie de données pour aider les utilisateurs à saisir le nombre correct de caractères, comme dans les formulaires ou les enquêtes en ligne.<br>
+                6. <b>Limitations linguistiques :</b> Dans certains cas, comme les messages SMS ou les applications de chat avec des limites de caractères, les compteurs de caractères sont importants pour s'assurer que les messages sont envoyés correctement.<br>
+            </p>
+            <h2>Limites de caractères sur les réseaux sociaux</h2>
+            <p>
+                <b>Twitter :</b><br>
+                La limite de caractères pour un tweet est de 280 caractères. Cependant, il existe des limitations supplémentaires pour certains types de contenu, tels que les images, les liens et les noms d'utilisateur, qui peuvent affecter le nombre de caractères effectif.<br>
+                <b>Facebook :</b><br>
+                <b>Messages réguliers :</b> Il n'y a pas de limite stricte de caractères pour les messages Facebook réguliers, mais les messages plus longs peuvent être tronqués dans les flux des utilisateurs. Cependant, il est généralement recommandé de garder les messages concis et engageants.<br>
+                <b>Publications sur les pages Facebook :</b> Les pages Facebook ont une limite de caractères recommandée d'environ 40 à 80 caractères pour un engagement maximal.<br>
+                <b>Instagram :</b><br>
+                <b>Légendes Instagram :</b> Instagram autorise jusqu'à 2 200 caractères pour les légendes des publications régulières. Cependant, seules les premières lignes sont immédiatement visibles et les utilisateurs doivent appuyer sur "Plus" pour voir la légende complète.<br>
+                <b>Bio Instagram :</b> La bio Instagram autorise jusqu'à 150 caractères.<br>
+                <b>LinkedIn :</b><br>
+                <b>Messages LinkedIn :</b>
+                La limite de caractères pour les messages LinkedIn est de 1 300 caractères. Cependant, comme sur d'autres plates-formes, il est conseillé de garder des messages concis et engageants.<br>
+                <b>Articles LinkedIn :</b>
+                Pour les contenus plus longs publiés sous forme d'articles LinkedIn, il n'y a pas de limite stricte de caractères. Il s'agit davantage de fournir un contenu précieux.<br>
+                <b>Snapchat :</b><br>
+                La limite de caractères de Snapchat varie en fonction du type de contenu. Les légendes de texte pour Snaps ont une limite de 80 caractères, tandis que les légendes pour Snapchat Stories ont une limite de 33 caractères.<br>
+                <b>TikTok :</b><br>
+                Les vidéos TikTok sont de forme courte et ne contiennent généralement pas beaucoup de texte. Les sous-titres vidéo peuvent varier en longueur, mais ils sont généralement courts et concis.<br>
+            </p>
+        </article>
+    </div>
+    <script src="js/counter_script.js"></script>
+    <script src="js/select_theme_script.js"></script>
+    <script src="js/select_lang_script.js"></script>
+</body>
+</html>
